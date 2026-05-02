@@ -1,0 +1,16 @@
+{
+  "name": "electralearn",
+  "version": "1.0.0",
+  "description": "ElectraLearn - Interactive Election Education Platform",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "seed": "cd backend && node seedDatabase.js",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "keywords": ["election", "education", "civic-tech", "interactive-learning"],
+  "author": "",
+  "license": "MIT"
+}
