@@ -15,20 +15,16 @@ const Home = () => {
           <p className="subtitle">
             Learn about elections, vote with confidence, and detect misinformation
           </p>
-          {!user ? (
-            <div className="hero-buttons">
-              <Link to="/signup" className="btn btn-primary">
-                Get Started
-              </Link>
-              <Link to="/login" className="btn btn-secondary">
-                Login
-              </Link>
-            </div>
-          ) : (
+          <div className="hero-buttons">
             <Link to="/dashboard" className="btn btn-primary">
-              Go to Dashboard
+              Explore Dashboard
             </Link>
-          )}
+            {!user && (
+              <Link to="/login" className="btn btn-secondary">
+                Login / Signup
+              </Link>
+            )}
+          </div>
         </div>
       </section>
 

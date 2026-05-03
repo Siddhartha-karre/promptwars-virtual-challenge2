@@ -19,11 +19,11 @@ const Navigation = () => {
           ElectraLearn
         </Link>
         <div className="nav-menu">
+          <Link to="/dashboard" className="nav-link">
+            Dashboard
+          </Link>
           {user ? (
             <>
-              <Link to="/dashboard" className="nav-link">
-                Dashboard
-              </Link>
               <Link to="/profile" className="nav-link">
                 Profile
               </Link>
@@ -35,9 +35,6 @@ const Navigation = () => {
             <>
               <Link to="/login" className="nav-link">
                 Login
-              </Link>
-              <Link to="/signup" className="nav-link">
-                Signup
               </Link>
             </>
           )}
